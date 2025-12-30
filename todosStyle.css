@@ -1,27 +1,114 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+
+:root {
+  --color-bg: #f5f7fb;
+  --color-card: #ffffff;
+  --color-primary: #4f46e5;
+  --color-secundary: #4DCCBD;
+  --color-text: #1f2933;
+  --color-muted: #9ca3af;
+
+  --radius: 12px;
+  --shadow: 0 10px 25px rgba(37, 24, 24, 0.274);
 }
 
 body {
-  height: 100vh;
+  background-color: var(--color-bg) !important;
+  color: var(--color-text) !important;
 }
 
-main {
+header, .pie-pagina {
+  background: linear-gradient(135deg, var(--color-primary), #6366f1);
+  color: white;
+  border-radius: 0 0 var(--radius) var(--radius);
+}
+
+main .lista {
+  background-color: var(--color-card);
+  padding: 2rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  max-width: 500px;
+}
+
+.list-group-item {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  gap: 12px;
+  position: relative;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  transition: background-color 0.2s ease;
 }
 
-.logo {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+.list-group-item:hover {
+  background-color: #eef2ff;
 }
 
-.menu {
-  background-color:lightgreen;
+
+.tarea-texto {
+  flex-grow: 1;
+  font-size: 1rem;
+  font-weight: 500;
+  padding-left: 5px;
+}
+
+.tarea-completada {
+  text-decoration: line-through !important;
+  color: var(--color-muted) !important;
+  opacity: 0.7;
+}
+
+.borrar {
+  opacity: 0;
+  font-size: 0.9rem;
+  padding: 4px 8px;
+  transition: opacity 0.2s ease;
+}
+
+.list-group-item:hover .borrar {
+  opacity: 1;
+}
+
+.lista p {
+  border: 2px solid var(--color-primary);
+  padding: 0.5rem;
+}
+
+#contador {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: var(--color-primary);
+}
+
+.miBoton {
+  width: 100%;
+  background-color: var(--color-secundary) !important;
+  border: none !important;
+  border-radius: var(--radius);
+}
+
+.miBoton:hover {
+  background-color: var(--color-primary) !important;
+}
+
+.imagen {
+  min-width: 300px;
+}
+
+img {
+  width: 100%;
+  border-radius: var(--radius);
 }
 
 .pie-pagina {
-  background-color:lightgreen;
+  border-radius: var(--radius) var(--radius) 0 0;
+}
+
+.redes a i {
+  font-size: 2rem !important;
+  color: var(--color-card);
+}
+
+.redes a i:hover {
+  color: var(--color-hover);
 }
