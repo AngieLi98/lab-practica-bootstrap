@@ -19,22 +19,7 @@
     <main class="m-4 d-flex flex-wrap justify-content-evenly align-items-center gap-4">
         <div class="lista">
             <h2 id="titulo" class="fs-1">✅ Mi lista de tareas</h2>
-            <ul id="lista-tareas" class="list-group list-group-flush">
-                <li class="list-group-item m-2"><input class="form-check-input check-tarea p-2" type="checkbox"
-                        name="tarea" value="1"><span class="tarea-texto">Estudiar HTML </span><button type="button"
-                        class="btn btn-danger borrar position-absolute bottom-0 end-0">🗑 Borrar</button>
-                </li>
-                <li class="list-group-item m-2"><input class="form-check-input check-tarea p-2" type="checkbox"
-                        name="tarea" value="1"><span class="tarea-texto">Estudiar JS</span><button type="button"
-                        class="btn btn-danger borrar position-absolute bottom-0 end-0">🗑 Borrar</button></li>
-                <li class="list-group-item m-2"><input class="form-check-input check-tarea p-2" type="checkbox"
-                        name="tarea" value="1"><span class="tarea-texto">Taller CSS</span><button type="button"
-                        class="btn btn-danger borrar position-absolute bottom-0 end-0">🗑 Borrar</button></li>
-                <li class="list-group-item m-2"><input class="form-check-input check-tarea p-2" type="checkbox"
-                        name="tarea" value="1"><span class="tarea-texto">Actividad Funciones JS</span><button type="button"
-                        class="btn btn-danger borrar position-absolute bottom-0 end-0">🗑 Borrar</button></li>
-            </ul>
-            <p>Tareas completadas: <span id="contador">0</span></p>
+            <ul id="lista-tareas" class="list-group list-group-flush"></ul>
             <form id="formulario-tarea" class="needs-validation mt-4">
                 <div class="">
                     <div>
@@ -49,6 +34,7 @@
                     </div>
                 </div>
             </form>
+            <p class="mt-2">Tareas completadas: <span id="contador">0</span></p>
         </div>
         <div class="imagen">
             <img src="./ToDo.png" alt="toDo">

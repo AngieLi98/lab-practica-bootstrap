@@ -72,7 +72,7 @@ form.addEventListener("submit", function (e) {
   input.value = "";
 
   actualizarContador();
-  appendAlert("Tarea guardada 💾", "success");
+  appendAlert("Tarea guardada", "success");
 });
 
 
